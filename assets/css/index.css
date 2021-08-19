@@ -1,0 +1,95 @@
+@font-face {
+    font-family: Titillium;
+    src: url("TitilliumWeb-Regular.woff2");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Titillium;
+    src: url("TitilliumWeb-Bold.woff2");
+    font-weight: bold;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1 rem = 10px */
+    background-color: #101010;
+    color: #EEE;
+    font-family: Titillium;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+body {
+    margin: 0 4rem;
+    margin-top: 8rem;
+}
+
+#about-me {
+    margin: 0 auto;
+    padding: 1rem;
+    width: fit-content;
+    transition: transform 300ms;
+    user-select: none;
+}
+#about-me h1 {
+    font-size: 3.6rem;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+#about-me h2 {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+#about-me h2 :nth-child(1) {
+    color: #329632;
+}
+#about-me:hover {
+    transform: scale(1.05);
+    transition: transform 300ms;
+    cursor: pointer;
+}
+
+main {
+    text-align: start;
+}
+
+#projects-grid {
+    margin: 4rem 8rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+#projects-grid p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+#projects-grid div {
+    flex: 1 1 512px;
+    height: fit-content;
+    cursor: pointer;
+}
+
+#projects-grid div img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#projects-grid div:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+    transition: all 300ms;
+}
+
+@media (max-width: 720px) {
+    html {
+        font-size: 1.5vw;
+    }
+    #projects-grid {
+        flex-direction: column;
+    }
+}
