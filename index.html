@@ -1,36 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/index.css">
-    <title>Personal Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Portfólio - Home</title>
+    <meta name="description" content="Meu portfólio pessoal, contendo os meus projetos já realizados.">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Code&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
+
 <body>
-    <header>
-        <div id="about-me" onclick="aboutMe()">
-            <h1>Guilherme Cesar Tomiasi</h1>
-            <h2><span>CS Student</span></h2>
-        </div>
-    </header>
-
-    <main>
-        <h2>Some of my projects:</h2>
-        <div id="projects-grid">
-            <div onclick="ecommerce()">
-                <p>A simple e-commerce like page.</p>
-                <img src="assets/img/ecommercepage1.PNG">
-            </div>
-            <div onclick="solitaire()">
-                <p>Solitaire Klondike and Spider</p>
-                <img src="assets/img/solitaire.png">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient" style="background: linear-gradient(135deg, #0C2D48, #145DA0);">
+        <div class="container"><a class="navbar-brand logo" href="#">Guilherme C. Tomiasi</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project-page.html">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">Currículo</a></li>
+                    <li class="nav-item"></li>
+                </ul>
             </div>
         </div>
+    </nav>
+    <main class="page lanidng-page">
+        <section class="portfolio-block block-intro">
+            <div class="container">
+                <div class="avatar" style="background: url(&quot;assets/img/fotoseria.png&quot;) center / contain no-repeat;"></div>
+                <div class="about-me">
+                    <p>Olá, eu sou Guilherme, estudante do curso de Bacharelado em Ciência da Computação pela UNESP de Presidente Prudente.</p>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio-block skills">
+            <div class="container">
+                <div class="row font-monospace">
+                    <div class="col-md-4 offset-md-0">
+                        <div class="card special-skill-item border-0">
+                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-game-controller-b-outline"></i></div>
+                            <div class="card-body">
+                                <h3 class="card-title" style="font-family: 'Fira Code', monospace;">Iniciante em Desenvolvimento de Jogos</h3>
+                                <p class="card-text" style="font-family: 'Fira Code', monospace;">Desenvolvimento de jogos através da Engine da Unity, que possibilita o desenvolvimento de jogos com diferentes complexidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card special-skill-item border-0">
+                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-monitor-outline"></i></div>
+                            <div class="card-body">
+                                <h3 class="card-title" style="font-family: 'Fira Code', monospace;">Iniciante em Desenvolvimento Web</h3>
+                                <p class="card-text" style="font-family: 'Fira Code', monospace;">Desenvolvimento de páginas web através do framework NextJS, permitindo a criação de páginas estáticas que são distribuídas com maior facilidade.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio-block call-to-action border-bottom">
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-center justify-content-md-center align-items-md-center content">
+                    <h3>Entre em contato!</h3><a class="btn btn-primary d-flex justify-content-center align-items-center justify-content-md-center align-items-md-center" role="button" style="background: transparent;width: 50px;height: 50px;border-style: none;border-color: transparent;color: transparent;" href="https://t.me/gtomiasi"><i class="fab fa-telegram" style="font-size: 50px;color: rgb(33, 37, 41);width: 50px;height: 50px;border-style: none;background: transparent;"></i></a>
+                </div>
+            </div>
+        </section>
     </main>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="assets/js/index.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="assets/js/theme.js"></script>
 </body>
+
 </html>
